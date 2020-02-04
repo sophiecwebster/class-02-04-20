@@ -1,0 +1,23 @@
+---
+title: "Congress"
+author: "Sophie Webster"
+date: "2/4/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+library(gov.1005.data)
+library(tidyverse)
+data(gov.1005.data)
+data(congress)
+```
+
+The oldest member of congress is
+```{r}
+congress %>%
+  arrange(desc(age))
+  
+```
+
